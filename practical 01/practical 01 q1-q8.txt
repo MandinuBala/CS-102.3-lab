@@ -1,0 +1,138 @@
+//Question 01
+#include <stdio.h>
+int main()
+{
+    printf ("Mandinu Balasooriya \n");
+    printf ("Science college \n");
+    printf ("\n");
+
+// Question 02
+{
+printf ("* \n");
+printf ("** \n");
+printf ("*** \n");
+printf ("**** \n");
+printf ("***** \n");
+printf ("\n");
+
+}
+
+//Question 03
+
+{
+        int in; //use %d
+       float fl; //use %f
+       double dou; //use %lf
+    char ch[20]; //use
+
+    printf("Input an integer \n");
+    scanf("%d", &in);
+    printf("Your integer value is %d \n", in);
+    printf ("\n");
+
+    printf("Input a float \n");
+    scanf("%f", &fl);
+    printf("Your float value is %f \n", fl);
+    printf("\n");
+
+    printf("Input a double \n");
+    scanf("%lf", &dou);
+    printf("Your float value is %f \n", fl);
+    printf ("\n");
+
+    printf("Input a char value \n");
+    scanf("%s", &ch);
+    printf("\n");
+    printf("Your char value is %s \n", ch);
+    printf("\n");
+
+
+    // Question 04
+{
+     int n1,n2,total;
+     printf ("enter the first number ");
+     scanf ("%d",&n1);
+     printf ("enter the second number ");
+     scanf ("%d",&n2);
+}
+     total=n1+n2;
+     printf ("the total is %d",total);
+
+}
+
+
+    // Question 05
+
+    float n1,n2,avg;
+
+    printf ("enter the first number ");
+    scanf ("%f",&n1);
+    printf ("enter the second number ");
+    scanf ("%f",&n2);
+
+
+    avg=(n1+n2)/2;
+
+    printf ("the average is %f",avg);
+
+{
+
+
+    // Question 06
+
+    int age,byear;
+    char name[20];
+
+    printf ("enter your name ");
+    scanf ("%s",&name);
+    printf ("enter your birth year ");
+    scanf ("%d",&byear);
+
+    age=2023-byear;
+
+    printf ("name is %s \n",name);
+    printf("age is %d",age);
+
+
+}
+
+    // Question 07
+
+    int n1,n2;
+    printf ("enter the two numbers = ");
+    scanf  ("%d %d",&n1,&n2);
+
+    printf ("\n");
+
+    //before swap
+    printf ("before the swap \n");
+    printf ("number one - %d \n",n1);
+    printf ("number two - %d \n",n2);
+    printf ("\n");
+
+    //after the swap
+    printf ("after the swap \n");
+    printf ("number one - %d \n",n2);
+    printf ("number two - %d \n",n1);
+    printf ("\n");
+}
+    // Question 08
+
+#include<stdio.h>
+int main()
+{
+    
+    
+	printf("The color: %s\n", "blue"); //%S show the output as "blue"
+	printf("First number: %d\n", 12345);//%d show the output value "12345"
+	printf("Second number: %04d\n", 25);//show the output as four numbers
+	printf("Third number: %i\n", 1234);//show the same number "1234"
+	printf("Float number: %3.2f\n", 3.14159);//limit the answer to two decimals
+	printf("Hexadecimal: %x\n", 255);//
+	printf("Octal: %o\n", 255);//
+	printf("Unsigned value: %u\n", 150);//show the same number 
+	printf("Just print the percentage sign %%\n", 10);//show the percentage sign
+
+	
+}
+
