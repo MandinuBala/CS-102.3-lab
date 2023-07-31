@@ -1,0 +1,55 @@
+// Question 01
+#include<stdio.h>
+int main()
+{
+    int age;
+    printf ("HI, HOW OLD ARE YOU? ");
+    scanf ("%d",&age);
+
+    printf ("\n \n");
+
+
+    printf("WELCOME %d \n",age);
+    printf("LET'S BE FRIENDS! \n");
+}
+
+//Question 02
+
+{
+    printf ("%5d,%5d,%5d \n",1,4,8);
+    printf ("%5d,%5d,%5d \n",3,9,27);
+    printf ("%5d,%5d,%5d \n",4,16,64);
+
+
+}
+
+//Question 03
+
+{
+    int time,avg;
+    float dis;
+
+    printf ("enter the distance = ");
+    scanf ("%f",&dis);
+    printf ("enter the time duration = ");
+    scanf ("%d",&time);
+
+
+    avg=dis/time;
+
+    printf ("average distance = %d ms-1 \n",avg);
+
+
+}
+
+//Question 04
+{
+    int c,f;
+
+    printf ("temperature in degrees to fahrenheit = ");
+    scanf("%d",&f);
+
+    c=(5/9)*(f-32);
+
+    printf ("Temperature in Degree to Celsius= %d",c);
+}
