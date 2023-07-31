@@ -1,0 +1,141 @@
+Q1) Use If-Else and write a program that reads an integer and determines and prints if the number is even or odd. (i.e. divisible by 2)
+#include <stdio.h>
+int main()
+{
+    int n1;
+
+    printf ("Enter the number - ");
+    scanf ("%d",&n1);
+
+    if (n1%2==0)
+    {
+        printf ("it's an even number ");
+
+    }else {
+    printf ("it's an odd number ");
+    }
+}
+Re-write the above program using a switch statement instead of an If-Else statement!
+	int n2;
+
+    printf("Enter the number - ");
+    scanf ("%d",&n2);
+
+ switch(n2)
+    {
+        case 0:printf ("it's an even");break;
+        case 2:printf ("It's an even");break;
+        case 4:printf ("It's an even");break;
+        case 6:printf ("It's an even");break;
+        case 8:printf ("It's an even");break;
+        default:printf ("It's not an even",n2);
+    }
+ Q2) Write a simple menu driven calculator to perform (+ - / *) operations. (The program must display a menu to select the desired operator.)
+#include <stdio.h>
+int main ()
+{
+  int n1,n2;
+  char s;
+  float ans;
+  printf ("Enter your integer value - ");
+  scanf("%d %d",&n1,&n2);
+  printf ("Select the symbol - \n");
+  scanf(" %c",&s);
+  printf ("\n\n");
+  switch(s)
+  {
+  case '+':ans=(float)n1+(float)n2;break;
+  case '-':ans=(float)n1-(float)n2;break;
+  case '*':ans=(float)n1*(float)n2;break;
+  case '/':ans=(float)n1/(float)n2;break;
+  }
+  printf ("The answer is %f",ans);
+}
+
+Q3) Create a text-based, menu-driven program that allows the user to choose whether to calculate the circumference of a circle, the area of a circle or the volume of a sphere. The program should then input a radius from the user, perform the appropriate calculation and display the result.
+		#include <stdio.h>
+int main ()
+{
+    int r;
+    double circ,area,volume;
+    char l;
+
+    printf ("choose what you want to calculate in a sphere\n\n");
+    printf ("- Circumference \n");
+    printf ("- Area \n");
+    printf ("- volume \n\n");
+
+    scanf (" %c",&l);
+    printf ("\n\n");
+    printf ("now enter the radius \n");
+    scanf (" %d",&r);
+    printf ("\n\n");
+    circ=2*3.14*(double)r;
+    area=3.14*(double)r*(double)r,(double)r;
+    volume=(4/3)*3.14*(double)r*(double)r*(double)r;
+    switch (l)
+    {
+        case 'c':printf("the circumference is %fl",circ);break;
+        case 'a':printf("the area is %fl",area);break;
+        case 'v':printf("the volume is %fl",volume);break;
+        default:printf("please enter given value ");
+    }
+    printf ("\n\n");
+}
+Q4) Write a C program to read a character from the user and determine whether the given letter is vowel or not. (Use a switch statement which also includes ‘default’ state).
+	
+	#include <stdio.h>
+int main ()
+{
+    char i;
+    printf ("enter a character to find out whether it's a vowel or not \n");
+     scanf (" %c",&i);
+
+    switch (i)
+    {
+        case 'a':printf("This is a vowel letter");break;
+        case 'e':printf("This is a vowel letter");break;
+        case 'i':printf("This is a vowel letter");break;
+        case 'o':printf("This is a vowel letter");break;
+        case 'u':printf("This is a vowel letter");break;
+        case 'A':printf("This is a vowel letter");break;
+        case 'E':printf("This is a vowel letter");break;
+        case 'I':printf("This is a vowel letter");break;
+        case 'O':printf("This is a vowel letter");break;
+        case 'U':printf("This is a vowel letter");break;
+        default:printf("This is not a vowel letter");
+    }
+    printf("\n\n");
+
+    }
+ 
+Q5) Write a C program to enter month number and print total number of days in month using switch case. First assume that the given month belongs to a non-leap year
+	#include <stdio.h>
+int main ()
+{
+    int mo;
+
+    printf ("enter the month \n");
+    scanf ("%d",&mo);
+    printf ("\n");
+
+    switch (mo)
+
+    {
+    case 1:printf("January");
+    case 3:printf("March");
+    case 5:printf("May");
+    case 7:printf("July");
+    case 8:printf("August");
+    case 10:printf("October");
+    case 12:printf("December");
+    printf (" has 31 days ");break;
+    case 2:printf("Februaur has 28 days ");break;
+    case 4:printf("April");
+    case 6:printf("June");
+    case 9:printf("September");
+    case 11:printf("November");
+    printf (" has 30 days ");break;
+    default:printf("this is not a valid month number ");;break;
+     }
+}
